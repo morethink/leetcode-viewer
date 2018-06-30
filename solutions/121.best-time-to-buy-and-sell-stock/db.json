@@ -1,0 +1,1 @@
+{"java":"class Solution {\n       public int maxProfit(int[] prices) {\n        int min = Integer.MAX_VALUE;\n        int max = 0;\n        for (int price : prices) {\n            min = Math.min(min, price);\n            max = Math.max(max, price - min);\n        }\n        return max;\n    }\n}"}
